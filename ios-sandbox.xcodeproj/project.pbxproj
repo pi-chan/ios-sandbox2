@@ -12,6 +12,7 @@
 		013DB61C20E9BA79007CA440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013DB61A20E9BA79007CA440 /* Main.storyboard */; };
 		013DB61E20E9BA7A007CA440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013DB61D20E9BA7A007CA440 /* Assets.xcassets */; };
 		013DB62120E9BA7A007CA440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013DB61F20E9BA7A007CA440 /* LaunchScreen.storyboard */; };
+		A944705DAFCECD938CB0729E /* Pods_ios_sandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4213F57B5F01EC9B88338B80 /* Pods_ios_sandbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		013DB61D20E9BA7A007CA440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		013DB62020E9BA7A007CA440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		013DB62220E9BA7A007CA440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4213F57B5F01EC9B88338B80 /* Pods_ios_sandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_sandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65D909F31462972EE6C5EB4E /* Pods-ios-sandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-sandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-sandbox/Pods-ios-sandbox.release.xcconfig"; sourceTree = "<group>"; };
+		AED90B73F2010D3B36792665 /* Pods-ios-sandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-sandbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-sandbox/Pods-ios-sandbox.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A944705DAFCECD938CB0729E /* Pods_ios_sandbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				013DB61520E9BA78007CA440 /* ios-sandbox */,
 				013DB61420E9BA78007CA440 /* Products */,
+				7B5D29A29142F94701FC04AA /* Pods */,
+				830A480EA47A5600A88949C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "ios-sandbox";
 			sourceTree = "<group>";
 		};
+		7B5D29A29142F94701FC04AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AED90B73F2010D3B36792665 /* Pods-ios-sandbox.debug.xcconfig */,
+				65D909F31462972EE6C5EB4E /* Pods-ios-sandbox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		830A480EA47A5600A88949C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4213F57B5F01EC9B88338B80 /* Pods_ios_sandbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 013DB62520E9BA7A007CA440 /* Build configuration list for PBXNativeTarget "ios-sandbox" */;
 			buildPhases = (
+				B442745E6B01A345BBECF350 /* [CP] Check Pods Manifest.lock */,
 				013DB60F20E9BA78007CA440 /* Sources */,
 				013DB61020E9BA78007CA440 /* Frameworks */,
 				013DB61120E9BA78007CA440 /* Resources */,
+				DB411F9C2E2787C2AA7B3771 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B442745E6B01A345BBECF350 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ios-sandbox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB411F9C2E2787C2AA7B3771 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ios-sandbox/Pods-ios-sandbox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-sandbox/Pods-ios-sandbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		013DB60F20E9BA78007CA440 /* Sources */ = {
@@ -278,15 +343,13 @@
 		};
 		013DB62620E9BA7A007CA440 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED90B73F2010D3B36792665 /* Pods-ios-sandbox.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZZ47U4PG3J;
 				INFOPLIST_FILE = "ios-sandbox/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.sonicgarden.ios-sandbox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +359,13 @@
 		};
 		013DB62720E9BA7A007CA440 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65D909F31462972EE6C5EB4E /* Pods-ios-sandbox.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZZ47U4PG3J;
 				INFOPLIST_FILE = "ios-sandbox/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.sonicgarden.ios-sandbox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
