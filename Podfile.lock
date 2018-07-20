@@ -1,16 +1,23 @@
 PODS:
+  - EasyImagy (0.4.0)
   - SCLAlertView (0.8)
 
 DEPENDENCIES:
+  - EasyImagy (from `https://gist.githubusercontent.com/pi-chan/14b04d19692f85d6e7b475c88076db27/raw/b89790c9933bc7c5abfa9cbd3d16f1caa24129b8/EasyImagy.podspec`)
   - SCLAlertView
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SCLAlertView
 
+EXTERNAL SOURCES:
+  EasyImagy:
+    :podspec: https://gist.githubusercontent.com/pi-chan/14b04d19692f85d6e7b475c88076db27/raw/b89790c9933bc7c5abfa9cbd3d16f1caa24129b8/EasyImagy.podspec
+
 SPEC CHECKSUMS:
+  EasyImagy: fe1663d8ffe9316a298cdf8ac4be5bf88fa69a1a
   SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
 
-PODFILE CHECKSUM: 2444b0c4e29e9d70c126fd8a0fa7e7bf792ffa6b
+PODFILE CHECKSUM: 8c879f606cbc0af7808f5d0c0e6beadbb5f3bcd5
 
 COCOAPODS: 1.5.3

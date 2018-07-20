@@ -7,22 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012CE88F20EF0AFC00C97A6C /* DismissControllerSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012CE88E20EF0AFC00C97A6C /* DismissControllerSegue.swift */; };
 		013DB61720E9BA79007CA440 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DB61620E9BA79007CA440 /* AppDelegate.swift */; };
-		013DB61920E9BA79007CA440 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DB61820E9BA79007CA440 /* ViewController.swift */; };
+		013DB61920E9BA79007CA440 /* SCLAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013DB61820E9BA79007CA440 /* SCLAlertViewController.swift */; };
 		013DB61C20E9BA79007CA440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013DB61A20E9BA79007CA440 /* Main.storyboard */; };
 		013DB61E20E9BA7A007CA440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 013DB61D20E9BA7A007CA440 /* Assets.xcassets */; };
 		013DB62120E9BA7A007CA440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 013DB61F20E9BA7A007CA440 /* LaunchScreen.storyboard */; };
+		016EA0542101BFE4004EFAA5 /* ModalTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016EA0532101BFE4004EFAA5 /* ModalTestViewController.swift */; };
+		016EA0562101C198004EFAA5 /* EasyImagyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016EA0552101C198004EFAA5 /* EasyImagyViewController.swift */; };
 		A944705DAFCECD938CB0729E /* Pods_ios_sandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4213F57B5F01EC9B88338B80 /* Pods_ios_sandbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		012CE88E20EF0AFC00C97A6C /* DismissControllerSegue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissControllerSegue.swift; sourceTree = "<group>"; };
 		013DB61320E9BA78007CA440 /* ios-sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-sandbox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		013DB61620E9BA79007CA440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		013DB61820E9BA79007CA440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		013DB61820E9BA79007CA440 /* SCLAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCLAlertViewController.swift; sourceTree = "<group>"; };
 		013DB61B20E9BA79007CA440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		013DB61D20E9BA7A007CA440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		013DB62020E9BA7A007CA440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		013DB62220E9BA7A007CA440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		016EA0532101BFE4004EFAA5 /* ModalTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTestViewController.swift; sourceTree = "<group>"; };
+		016EA0552101C198004EFAA5 /* EasyImagyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyImagyViewController.swift; sourceTree = "<group>"; };
 		4213F57B5F01EC9B88338B80 /* Pods_ios_sandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_sandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65D909F31462972EE6C5EB4E /* Pods-ios-sandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-sandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-sandbox/Pods-ios-sandbox.release.xcconfig"; sourceTree = "<group>"; };
 		AED90B73F2010D3B36792665 /* Pods-ios-sandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-sandbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-sandbox/Pods-ios-sandbox.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,11 +68,14 @@
 			isa = PBXGroup;
 			children = (
 				013DB61620E9BA79007CA440 /* AppDelegate.swift */,
-				013DB61820E9BA79007CA440 /* ViewController.swift */,
+				013DB61820E9BA79007CA440 /* SCLAlertViewController.swift */,
 				013DB61A20E9BA79007CA440 /* Main.storyboard */,
 				013DB61D20E9BA7A007CA440 /* Assets.xcassets */,
 				013DB61F20E9BA7A007CA440 /* LaunchScreen.storyboard */,
 				013DB62220E9BA7A007CA440 /* Info.plist */,
+				012CE88E20EF0AFC00C97A6C /* DismissControllerSegue.swift */,
+				016EA0532101BFE4004EFAA5 /* ModalTestViewController.swift */,
+				016EA0552101C198004EFAA5 /* EasyImagyViewController.swift */,
 			);
 			path = "ios-sandbox";
 			sourceTree = "<group>";
@@ -182,10 +191,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ios-sandbox/Pods-ios-sandbox-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyImagy/EasyImagy.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyImagy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				013DB61920E9BA79007CA440 /* ViewController.swift in Sources */,
+				016EA0542101BFE4004EFAA5 /* ModalTestViewController.swift in Sources */,
+				012CE88F20EF0AFC00C97A6C /* DismissControllerSegue.swift in Sources */,
+				013DB61920E9BA79007CA440 /* SCLAlertViewController.swift in Sources */,
+				016EA0562101C198004EFAA5 /* EasyImagyViewController.swift in Sources */,
 				013DB61720E9BA79007CA440 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
